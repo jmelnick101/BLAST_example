@@ -6,9 +6,18 @@ It can be used to identify genes, species, and proteins!
 
 Access it here: [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) 
 
+The main two types of BLAST are the Nucleotide BLAST and the Protein BLAST, which compare a nucleotide sequence to a database of other nucleotide sequences, and a protein sequence to a database of other protein sequences, respectively. 
+
+Three other types are:
+  - BLASTX, which translates the query nucleotide sequence into a protein to compare to other proteins. 
+  - TBLASTN, which takes a protein sequence as an input, converts it into a nucleotide sequence, and compares it to other nucleotide sequences. 
+  - TBLASTX, which translates the query nucleotide sequence into a protein, then compares it to other protein sequences that it has translated from nucleotide sequences. 
+
 ___
 
 For this example, I have obtained this amino acid sequence from GenBank. At the end, you will be at the same page I started at. Of course, when you apply this to your own data, it won't necessarily be an exact match like this. 
+
+We will be doing a Protein BLAST, but note that you could get to the same page if I had given you the nucleotide sequence and you used BLASTX. 
 
 Here is the FASTA sequence. I have removed the first line, which had the accession number, protein name, and species name. 
 
